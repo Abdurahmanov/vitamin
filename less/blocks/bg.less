@@ -5,6 +5,13 @@
     min-width: 1024px;
     overflow: hidden;
     position: relative;
+    &-tags-graph{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-grow: 1;
+    }
     &__wrap{
     	position: absolute;
 	    z-index: 0;
@@ -12,6 +19,102 @@
 	    & img{
 	    	width: 100%;
 	    }
+    }
+    &__item{
+        position: relative;
+    }
+    &__info{
+        position: absolute;
+        top: 30%;
+        left: 17%;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1255px;
+        width: 100%;
+        &-text{
+            display: flex;
+            flex-direction: column;
+            max-width: 630px;
+            width: 100%;
+        }
+        &-graphics{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+            &-item{
+                margin: 0 auto;
+            }
+        }
+    }
+    &__vitamins{
+        display: flex;
+        /* align-items: flex-end; */
+        width: 100%;
+    }
+    &__tags{
+        display: flex;
+        width: 180px;
+        flex-wrap: wrap;
+        &-item{
+            color: white;
+            font-family: Roboto;
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 15px;
+            height: 32px;
+            flex-grow: 1;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 7px;
+            text-transform: uppercase;
+            margin-top: 10px;
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+    &__title{
+        color: white;
+        font-family: "Roboto Slab";
+        font-size: 72px;
+        font-weight: 700;
+        letter-spacing: -0.36px;
+        line-height: 72px;
+        margin-top: 5px;
+    }
+    &__description{
+        color: white;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-top: 25px;
+        width: 510px;
+    }
+    &__icon{
+        &-item{
+            background: url("../../img/sprite.png");
+            width: 34px;
+            height: 43px;
+            display: inline-block;
+            margin-right: -10px;
+            &_time{
+                background-position: 0px 43px;
+                margin-right: 20px;
+            }
+            &_knife-bg{
+                background-position: 0px 97px;
+                width: 40px;
+                height: 45px;
+            }
+            &_knife{
+                background-position: 0px 140px;
+                width: 40px;
+                height: 45px;
+
+            }
+        }
     }
 
 }

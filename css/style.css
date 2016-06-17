@@ -172,6 +172,33 @@ footer {
 a {
   text-decoration: none;
 }
+.owl-theme .owl-controls {
+  margin-top: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 27%;
+  left: 46%;
+}
+.owl-theme .owl-controls .owl-page span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 10px;
+}
+.color-1 {
+  background-color: #ff5573;
+}
+.color-2 {
+  background-color: #4a90e2;
+}
+.color-3 {
+  background-color: #f5a623;
+}
+.color-4 {
+  background-color: #bd10e0;
+}
+.text-color-1 {
+  color: #ff5573;
+}
 .header {
   margin: 0 auto;
   height: 120px;
@@ -224,6 +251,13 @@ a {
   overflow: hidden;
   position: relative;
 }
+.bg-tags-graph {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-grow: 1;
+}
 .bg__wrap {
   position: absolute;
   z-index: 0;
@@ -231,6 +265,99 @@ a {
 }
 .bg__wrap img {
   width: 100%;
+}
+.bg__item {
+  position: relative;
+}
+.bg__info {
+  position: absolute;
+  top: 30%;
+  left: 17%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1255px;
+  width: 100%;
+}
+.bg__info-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 630px;
+  width: 100%;
+}
+.bg__info-graphics {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.bg__info-graphics-item {
+  margin: 0 auto;
+}
+.bg__vitamins {
+  display: flex;
+  /* align-items: flex-end; */
+  width: 100%;
+}
+.bg__tags {
+  display: flex;
+  width: 180px;
+  flex-wrap: wrap;
+}
+.bg__tags-item {
+  color: white;
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  height: 32px;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.bg__title {
+  color: white;
+  font-family: "Roboto Slab";
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: -0.36px;
+  line-height: 72px;
+  margin-top: 5px;
+}
+.bg__description {
+  color: white;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 25px;
+  width: 510px;
+}
+.bg__icon-item {
+  background: url("../../img/sprite.png");
+  width: 34px;
+  height: 43px;
+  display: inline-block;
+  margin-right: -10px;
+}
+.bg__icon-item_time {
+  background-position: 0px 43px;
+  margin-right: 20px;
+}
+.bg__icon-item_knife-bg {
+  background-position: 0px 97px;
+  width: 40px;
+  height: 45px;
+}
+.bg__icon-item_knife {
+  background-position: 0px 140px;
+  width: 40px;
+  height: 45px;
 }
 .menu-top {
   display: inline-block;

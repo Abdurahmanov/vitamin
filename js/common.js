@@ -1,6 +1,6 @@
 $(document).ready(function() {
  
-  $("#owl-car").owlCarousel({
+  $("#owl-bg").owlCarousel({
  
       navigation : false, // Show next and prev buttons
       slideSpeed : 300,
@@ -15,5 +15,12 @@ $(document).ready(function() {
       // itemsMobile : false
  
   });
+
+   $("#owl-top").owlCarousel({
+        items: 4,
+        navigation: true,
+        pagination: false,
+        navigationText: ["&lt", "&gt"]
+    })
  
 });

@@ -29,7 +29,7 @@
         left: 17%;
         display: flex;
         justify-content: space-between;
-        max-width: 1255px;
+        max-width: 1280px;
         width: 100%;
         &-text{
             display: flex;
@@ -52,6 +52,32 @@
         display: flex;
         /* align-items: flex-end; */
         width: 100%;
+        justify-content: space-between;
+        &-item{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    &__vitamin{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 40px;
+        color: white;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        position: relative;
+
+        &-description{
+            color: white;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
     }
     &__tags{
         display: flex;

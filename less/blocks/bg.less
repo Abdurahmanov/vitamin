@@ -142,5 +142,59 @@
             }
         }
     }
-
+    &__details{
+        align-items: flex-end;
+        width: 900px;
+        margin: 0 auto;
+        z-index: 10;
+        position: relative;
+        display: flex;
+        height: 100%;
+        padding-bottom: 45px;
+        &-title{
+            color: white;
+            font-family: "Roboto Slab";
+            font-size: 72px;
+            font-weight: 700;
+            letter-spacing: -0.36px;
+            line-height: 72px;
+            margin-top: 10px;
+        }
+        &-description{
+            color: white;
+            font-family: Roboto;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.1px;
+            line-height: 30px;
+            margin-top: 35px;
+        }
+    }
+    &__cooking{
+        text-align: center;
+        &-info{
+            color: white;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.16px;
+            line-height: 32px;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        &-time{
+            margin-right: 55px;
+        }
+        &-type{
+            a{
+                color: #9b9b9b;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+            }
+        }
+    }
+    
 }

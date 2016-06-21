@@ -22,5 +22,16 @@ $(document).ready(function() {
         pagination: false,
         navigationText: ["&lt", "&gt"]
     })
+    $("#owl-similar").owlCarousel({
+        items: 3,
+        navigation: true,
+        pagination: false,
+        navigationText: ["&lt", "&gt"]
+    })
+
+   $('.scroll-pane').mCustomScrollbar({
+        axis: "yx",
+        theme: "minimal"
+    });
  
 });

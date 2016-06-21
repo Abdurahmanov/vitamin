@@ -139,16 +139,16 @@
             display: inline-block;
             margin-right: -10px;
             &_time{
-                background-position: 0px 43px;
+                background-position: 0px 76px;
                 margin-right: 20px;
             }
             &_knife-bg{
-                background-position: 0px 97px;
+                background-position: 0px 131px;
                 width: 40px;
                 height: 45px;
             }
             &_knife{
-                background-position: 0px 140px;
+                background-position: 0px 176px;
                 width: 40px;
                 height: 45px;
 
@@ -198,6 +198,34 @@
         }
         &-time{
             margin-right: 55px;
+            padding-left: 40px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            &:before{
+                content: '';
+                background: url("../../img/sprite.png");
+                width: 25px;
+                height: 31px;
+                display: inline-block;
+                background-position: 0px -122px;
+                position: absolute;
+                left: 0;
+            }
+        }
+        &-difficulty{
+            padding-left: 40px;
+            position: relative;
+            &:before{
+                content: '';
+                background: url("../../img/sprite.png");
+                width: 25px;
+                height: 31px;
+                display: inline-block;
+                background-position: 0px -299px;
+                position: absolute;
+                left: 0;
+            }
         }
         &-type{
             a{

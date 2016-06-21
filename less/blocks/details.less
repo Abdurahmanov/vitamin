@@ -1,0 +1,210 @@
+.details{
+	padding: 50px 0 0px;
+	&__wrapper{
+		max-width: 1280px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__items{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid #d8d8d8;
+		padding-bottom: 40px;
+	}
+	&__item{
+		display: flex;
+		width: 31.25%;
+		flex-direction: column;
+		.bg__tags{
+			width: 385px;
+		    margin-top: 20px;
+		    padding: 0 20px;
+		    margin-bottom: 30px;
+		}
+	}
+	&__calories{
+		height: 225px;
+		overflow: auto;
+		&-item{
+			color: #4a4a4a;
+		    font-family: Roboto;
+		    font-size: 16px;
+		    font-weight: 400;
+		    line-height: 47px;
+		    padding: 0 20px;
+		}
+	}
+	&__title{
+		display: flex;
+    	flex-direction: row;
+    	color: #9b9b9b;
+		font-family: Roboto;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.14px;
+		line-height: 30px;
+		padding: 0 20px;
+	}
+	&__table{
+		display: table;
+		margin-top: 20px;
+		width: 80%;
+		&-scroll{
+			height: 390px;
+			overflow: auto;
+		}
+		&-row{
+			display: table-row;
+			height: 47px;
+		    line-height: 47px;
+		    &:nth-child(2n){
+		    	background-color: rgba(230, 230, 230, 0.2);
+		    }
+		}
+		&-cell{
+			display: table-cell;
+			color: #4a4a4a;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0.16px;
+			padding-left: 20px;
+		}
+	}
+	&__vitamins{
+		margin-top: 20px;
+		height: 380px;
+	    overflow: auto;
+	    display: block;
+	    border-left: 2px solid #d8d8d8;
+	    border-right: 2px solid #d8d8d8;
+	    padding: 0 20px;
+	}
+	&__vitamin{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+    	height: 47px;
+		&-title{
+			padding-left: 45px;
+			font-family: Roboto;
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: 0.16px;
+			position: relative;
+			
+			&:before{
+				content: '';
+				background: url("../../img/sprite-vitamin.png");
+				width: 39px;
+				height: 30px;
+				position: absolute;
+				left: 0;
+				top: -5px;
+			}
+		}
+		&-procent{
+			color: #4a4a4a;
+		    font-family: Roboto;
+		    font-size: 16px;
+		    font-weight: 400;
+		    letter-spacing: 0.16px;
+		    margin-left: 10px;
+		    &-bar{
+		    	height: 4px;
+			    opacity: 0.8;
+			    border-radius: 4px;
+			    margin-left: 15px;
+		    }
+		}
+		&_a{
+			.details__vitamin-procent-bar{
+				width: 34%;
+			}
+			.details__vitamin-title{
+				&:before{
+					
+				}
+			}
+		}
+		&_b1{
+			.details__vitamin-procent-bar{
+				width: 54%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -51px;
+					height: 25px;
+				}
+			}
+		}
+		&_b2{
+			.details__vitamin-procent-bar{
+				width: 61%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -100px;
+					height: 25px;
+				}
+			}
+		}
+		&_b5{
+			.details__vitamin-procent-bar{
+				width: 37%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -150px;
+					height: 25px;
+				}
+			}
+		}
+		&_b6{
+			.details__vitamin-procent-bar{
+				width: 21%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -200px;
+					height: 25px;
+				}
+			}
+		}
+		&_b12{
+			.details__vitamin-procent-bar{
+				width: 46%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -250px;
+    				height: 30px;
+				}
+			}
+		}
+		&_pp{
+			.details__vitamin-procent-bar{
+				width: 24%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -300px;
+    				height: 30px;
+				}
+			}
+		}
+		&_e{
+			.details__vitamin-procent-bar{
+				width: 41%;
+			}
+			.details__vitamin-title{
+				&:before{
+					background-position: center -350px;
+    				height: 30px;
+				}
+			}
+		}
+	}
+}
